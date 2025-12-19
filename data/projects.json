@@ -1,0 +1,223 @@
+[
+  {
+    "id": "1",
+    "slug": "smart-warehouse",
+    "title": "智能仓储数字孪生平台",
+    "description": "三维场景 + 实时数据联动，支持设备状态与货物流转动画。",
+    "tags": ["Three.js", "WebGL", "性能优化"],
+    "category": "数字孪生",
+    "thumbnailUrl": null,
+    "createdAt": "2024-01-15T00:00:00.000Z",
+    "updatedAt": "2024-06-30T00:00:00.000Z",
+    "role": "前端负责人 / 独立交付",
+    "period": "2024.01 - 2024.06",
+    "techStack": ["Next.js", "Three.js", "TypeScript", "WebSocket"],
+    "links": {
+      "demo": "https://demo.example.com/smart-warehouse",
+      "github": "https://github.com/yourname/smart-warehouse",
+      "article": "https://blog.example.com/smart-warehouse"
+    },
+    "kpis": [
+      {
+        "label": "关键场景优化",
+        "value": "FPS +15"
+      },
+      {
+        "label": "资源与渲染策略",
+        "value": "首屏 -30%"
+      },
+      {
+        "label": "长时监控场景",
+        "value": "稳定运行"
+      }
+    ],
+    "background": "为智能仓储系统构建三维数字孪生平台，实现设备状态实时监控、货物流转可视化、异常告警等功能。目标是提升运维效率，降低人工巡检成本。成功指标：FPS 稳定在 50+，首屏加载时间 < 2s，支持 7x24 小时稳定运行。",
+    "responsibilities": [
+      "搭建三维场景结构（场景/相机/光照/控制器）",
+      "实时数据接入与状态映射（设备状态/动画/告警）",
+      "性能优化：渲染、资源加载、对象管理",
+      "组件化沉淀：相机控制、拾取高亮、标注系统"
+    ],
+    "technicalSolution": [
+      {
+        "title": "架构模块",
+        "description": "Scene Core（场景核心层）/ Data Layer（数据层，MQTT/WebSocket 接入）/ Interaction（交互层，拾取/高亮/标注）/ UI Layer（UI 层，React 组件）/ Asset Pipeline（资源管道，模型/纹理加载优化）"
+      },
+      {
+        "title": "数据流",
+        "description": "MQTT/WebSocket → 状态归一化（统一数据格式） → 渲染映射（数据到 3D 对象的映射） → UI 展示（React 状态同步）"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "难点 1：性能瓶颈",
+        "description": "方案：使用 InstancedMesh 批量渲染相同对象、Frustum Culling 视锥剔除、LOD（Level of Detail）多级细节、Geometry 合并减少 Draw Call，最终 FPS 从 35 提升到 50+。"
+      },
+      {
+        "title": "难点 2：交互复杂",
+        "description": "方案：Raycaster 拾取、hover/选中态状态机、事件分层（3D 对象事件 vs UI 事件），支持多选、框选、右键菜单等复杂交互。"
+      },
+      {
+        "title": "难点 3：实时数据抖动",
+        "description": "方案：节流（throttle）控制更新频率、插值（lerp）平滑数值变化、状态机管理设备状态转换、队列缓冲突发数据，确保动画流畅且数据准确。"
+      }
+    ],
+    "screenshots": []
+  },
+  {
+    "id": "2",
+    "slug": "airport-system",
+    "title": "机场行李分拣管理系统",
+    "description": "复杂表格与业务流程、权限、监控看板与异常处理。",
+    "tags": ["React/Vue", "组件库", "权限"],
+    "category": "可视化",
+    "thumbnailUrl": null,
+    "createdAt": "2023-08-01T00:00:00.000Z",
+    "updatedAt": "2023-12-31T00:00:00.000Z",
+    "role": "前端核心开发",
+    "period": "2023.08 - 2023.12",
+    "techStack": ["React", "TypeScript", "Ant Design", "Redux"],
+    "links": {
+      "demo": null,
+      "github": null,
+      "article": null
+    },
+    "kpis": [
+      {
+        "label": "表格性能",
+        "value": "万级数据流畅滚动"
+      },
+      {
+        "label": "权限控制",
+        "value": "细粒度 RBAC"
+      },
+      {
+        "label": "异常处理",
+        "value": "实时告警与处理"
+      }
+    ],
+    "background": "为机场行李分拣系统构建管理平台，支持实时监控、异常处理、权限管理等功能。",
+    "responsibilities": [
+      "复杂表格组件开发（虚拟滚动、排序、筛选）",
+      "权限系统设计与实现（RBAC）",
+      "监控看板数据可视化",
+      "异常处理流程优化"
+    ],
+    "technicalSolution": [
+      {
+        "title": "表格优化",
+        "description": "使用虚拟滚动（react-window）处理万级数据，懒加载与分页结合，减少 DOM 节点。"
+      },
+      {
+        "title": "权限系统",
+        "description": "基于角色的访问控制（RBAC），前端路由守卫 + 按钮级权限控制。"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "难点 1：大数据表格性能",
+        "description": "方案：虚拟滚动 + 分页 + 按需渲染，支持万级数据流畅滚动。"
+      },
+      {
+        "title": "难点 2：复杂权限控制",
+        "description": "方案：权限树结构设计，前端路由守卫 + 组件级权限指令，确保安全性。"
+      }
+    ],
+    "screenshots": []
+  },
+  {
+    "id": "3",
+    "slug": "ai-toolchain",
+    "title": "AI 辅助知识检索/工具链",
+    "description": "把文档、项目经验、代码片段变成可检索的知识库与回答助手。",
+    "tags": ["RAG", "Node/Python", "Prompt"],
+    "category": "AI 应用",
+    "thumbnailUrl": null,
+    "createdAt": "2024-03-01T00:00:00.000Z",
+    "updatedAt": "2024-09-30T00:00:00.000Z",
+    "role": "全栈开发",
+    "period": "2024.03 - 2024.09",
+    "techStack": ["Next.js", "Python", "OpenAI API", "Vector DB"],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/yourname/ai-toolchain",
+      "article": null
+    },
+    "kpis": [
+      {
+        "label": "检索准确率",
+        "value": "85%+"
+      },
+      {
+        "label": "响应时间",
+        "value": "< 2s"
+      },
+      {
+        "label": "知识库规模",
+        "value": "10万+ 文档片段"
+      }
+    ],
+    "background": "构建企业内部知识检索系统，将文档、代码、项目经验向量化存储，支持语义搜索与智能问答。",
+    "responsibilities": [
+      "RAG 系统设计与实现",
+      "向量数据库集成",
+      "前端检索界面开发",
+      "Prompt 工程优化"
+    ],
+    "technicalSolution": [
+      {
+        "title": "RAG 架构",
+        "description": "文档分块 → 向量化（OpenAI Embeddings）→ 向量数据库（Pinecone/Chroma）→ 检索增强生成（RAG Pipeline）。"
+      },
+      {
+        "title": "前端交互",
+        "description": "Next.js SSR + 流式响应（Streaming），实时显示检索结果与生成过程。"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "难点 1：检索准确率",
+        "description": "方案：优化分块策略（chunk size/overlap）、混合检索（向量 + 关键词）、重排序（rerank），准确率从 70% 提升到 85%+。"
+      },
+      {
+        "title": "难点 2：响应速度",
+        "description": "方案：异步向量化、缓存常见查询、流式响应，平均响应时间 < 2s。"
+      }
+    ],
+    "screenshots": []
+  },
+  {
+    "id": "4",
+    "slug": "project-4",
+    "title": "项目 4：示例标题",
+    "description": "一句话成果导向描述：解决了什么问题，带来什么效果。",
+    "tags": ["Three.js", "TypeScript", "性能"],
+    "category": "数字孪生",
+    "thumbnailUrl": null,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "slug": "project-5",
+    "title": "项目 5：示例标题",
+    "description": "一句话成果导向描述：解决了什么问题，带来什么效果。",
+    "tags": ["Three.js", "TypeScript", "性能"],
+    "category": "可视化",
+    "thumbnailUrl": null,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "slug": "project-6",
+    "title": "项目 6：示例标题",
+    "description": "一句话成果导向描述：解决了什么问题，带来什么效果。",
+    "tags": ["Three.js", "TypeScript", "性能"],
+    "category": "AI 应用",
+    "thumbnailUrl": null,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]
+

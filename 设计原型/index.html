@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作品集原型 - 首页</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <a href="./index.html" class="brand" aria-label="回到首页">
+      <strong>Allen Lu</strong>
+      <span>前端 · 可视化 · AI 应用</span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a href="./index.html" class="active">首页</a>
+      <a href="./projects.html" class="">项目</a>
+      <a href="./about.html" class="">关于我</a>
+      <a href="./resume.html" class="">简历</a>
+      <a href="./contact.html" class="">联系</a>
+      <a class="btn primary" href="./contact.html">约聊 / 合作</a>
+    </nav>
+  </div>
+</div>
+
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="h1">前端工程师｜可视化/Three.js｜AI 应用</h1>
+        <p class="lead">专注复杂交互与可视化系统的工程交付：结构清晰、性能可控、组件可复用，并善用 AI 工具链提升研发效率。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="./projects.html">查看项目</a>
+          <a class="btn" href="./resume.html">下载简历</a>
+          <a class="btn" href="./contact.html">联系我</a>
+        </div>
+
+        <div class="kpi-row">
+          <div class="kpi"><strong>4+ 年</strong><span>前端工程经验</span></div>
+          <div class="kpi"><strong>可视化/三维</strong><span>数字孪生项目交付</span></div>
+          <div class="kpi"><strong>AI 提效</strong><span>工具链/智能功能探索</span></div>
+        </div>
+      </div>
+      <div class="media">右侧媒体位（项目截图 / 3D 场景截帧 / Demo 视频占位）</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>核心优势</h2>
+        <p>面试官最关心的三件事：你能不能做复杂事、怎么做、做出来效果如何。以下模块都是为“快速判断”设计。</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card card-pad">
+          <h3 class="card-title">可视化与三维交互</h3>
+          <p class="card-desc">Three.js / WebGL / 场景交互 / 动画 / 选中高亮 / 相机控制 / 资源加载优化。</p>
+        </div>
+        <div class="card card-pad">
+          <h3 class="card-title">工程化与性能</h3>
+          <p class="card-desc">组件化沉淀、状态管理、请求与缓存、性能指标与优化策略（首屏、FPS、资源体积）。</p>
+        </div>
+        <div class="card card-pad">
+          <h3 class="card-title">AI 应用与提效</h3>
+          <p class="card-desc">RAG/Agent/自动化脚手架/文档与代码生成流程；把“会用”变成“能交付”。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-muted);">
+    <div class="container">
+      <div class="section-header">
+        <h2>精选项目</h2>
+        <p>每个项目都按“背景 → 职责 → 难点 → 方案 → 结果”组织，便于你在面试中复述。</p>
+      </div>
+
+      <div class="proj-grid">
+        <a class="card proj-card" href="./project-detail.html">
+          <div class="thumb">缩略图占位</div>
+          <div class="body">
+            <h3>智能仓储数字孪生平台</h3>
+            <p>三维场景 + 实时数据联动，支持设备状态与货物流转动画。</p>
+            <div class="badges"><span class="badge">Three.js</span><span class="badge">WebGL</span><span class="badge">性能优化</span></div>
+          </div>
+        </a>
+
+        <a class="card proj-card" href="./project-detail.html">
+          <div class="thumb">缩略图占位</div>
+          <div class="body">
+            <h3>机场行李分拣管理系统</h3>
+            <p>复杂表格与业务流程、权限、监控看板与异常处理。</p>
+            <div class="badges"><span class="badge">React/Vue</span><span class="badge">组件库</span><span class="badge">权限</span></div>
+          </div>
+        </a>
+
+        <a class="card proj-card" href="./project-detail.html">
+          <div class="thumb">缩略图占位</div>
+          <div class="body">
+            <h3>AI 辅助知识检索/工具链</h3>
+            <p>把文档、项目经验、代码片段变成可检索的知识库与回答助手。</p>
+            <div class="badges"><span class="badge">RAG</span><span class="badge">Node/Python</span><span class="badge">Prompt</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>技术栈与工具</h2>
+        <p>强调“能落地”的技术组合：前端主栈 + 可视化 + 工程化 + 最小后端 + AI 工具链。</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card card-pad">
+          <h3 class="card-title">前端</h3>
+          <div class="badges">
+            <span class="badge">TypeScript</span><span class="badge">React</span><span class="badge">Vue 3</span><span class="badge">Next.js</span>
+            <span class="badge">Vite</span><span class="badge">状态管理</span><span class="badge">测试/规范</span>
+          </div>
+        </div>
+        <div class="card card-pad">
+          <h3 class="card-title">可视化 / 三维</h3>
+          <div class="badges">
+            <span class="badge">Three.js</span><span class="badge">WebGL</span><span class="badge">ECharts</span><span class="badge">GSAP</span>
+            <span class="badge">模型加载</span><span class="badge">性能优化</span>
+          </div>
+        </div>
+        <div class="card card-pad">
+          <h3 class="card-title">后端 / 部署</h3>
+          <div class="badges">
+            <span class="badge">Node.js</span><span class="badge">API</span><span class="badge">Nginx</span><span class="badge">Vercel</span>
+            <span class="badge">CI/CD</span>
+          </div>
+        </div>
+        <div class="card card-pad">
+          <h3 class="card-title">AI 工具链</h3>
+          <div class="badges">
+            <span class="badge">Prompt</span><span class="badge">RAG</span><span class="badge">Agent</span><span class="badge">自动化脚手架</span>
+            <span class="badge">文档生成</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div>© 2025 Allen Lu · 极简商务作品集原型</div>
+    <div>邮箱：you@example.com · GitHub：github.com/yourname · 微信：yourwechat</div>
+  </div>
+</footer>
+</body>
+</html>

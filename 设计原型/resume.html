@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作品集原型 - 简历</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <a href="./index.html" class="brand" aria-label="回到首页">
+      <strong>Allen Lu</strong>
+      <span>前端 · 可视化 · AI 应用</span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a href="./index.html" class="">首页</a>
+      <a href="./projects.html" class="">项目</a>
+      <a href="./about.html" class="">关于我</a>
+      <a href="./resume.html" class="active">简历</a>
+      <a href="./contact.html" class="">联系</a>
+      <a class="btn primary" href="./contact.html">约聊 / 合作</a>
+    </nav>
+  </div>
+</div>
+
+
+<main class="container" style="padding-bottom:64px;">
+  <div class="page-title">
+    <h1>简历</h1>
+    <p>这里先用“简历摘要 + 下载按钮”。正式版可替换为 PDF 预览或在线简历模块。</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card card-pad">
+      <h3 class="card-title">快速摘要</h3>
+      <ul style="margin:0;padding-left:18px;color:var(--text-muted);">
+        <li>主栈：TypeScript / React / Vue / Next.js</li>
+        <li>方向：可视化、Three.js、数字孪生</li>
+        <li>工程化：组件化、性能优化、规范化交付</li>
+        <li>AI：RAG/Agent/工具链实践（占位）</li>
+      </ul>
+      <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;">
+        <button class="btn primary" onclick="alert('占位：后续替换为真实 PDF 下载')">下载 PDF</button>
+        <button class="btn" onclick="navigator.clipboard?.writeText('you@example.com');alert('已复制邮箱（占位）')">复制邮箱</button>
+      </div>
+    </div>
+    <div class="card card-pad">
+      <h3 class="card-title">简历预览位</h3>
+      <div class="media" style="height:340px;">PDF 预览/截图占位</div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div>© 2025 Allen Lu · 极简商务作品集原型</div>
+    <div>邮箱：you@example.com · GitHub：github.com/yourname · 微信：yourwechat</div>
+  </div>
+</footer>
+</body>
+</html>
