@@ -1,0 +1,182 @@
+{
+  "site": {
+    "branding": {
+      "name": "Allen Lu",
+      "subtitle": "前端 · 可视化 · AI 应用"
+    },
+    "navigation": [
+      { "label": "首页", "href": "/" },
+      { "label": "项目", "href": "/projects" },
+      { "label": "关于我", "href": "/about" },
+      { "label": "简历", "href": "/resume" },
+      { "label": "联系", "href": "/contact" }
+    ],
+    "ctaButton": {
+      "label": "约聊 / 合作",
+      "href": "/contact"
+    },
+    "footer": {
+      "copyright": "Allen Lu · 极简商务作品集原型",
+      "links": {
+        "email": "923206295@qq.com",
+        "github": "github.com/yourname",
+        "wechat": "yourwechat"
+      }
+    },
+    "seo": {
+      "title": "Allen Lu - 前端工程师作品集",
+      "description": "个人作品集网站 - 前端工程师，专注可视化/三维交互系统与 AI 应用"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "前端工程师｜可视化/Three.js｜AI 应用",
+      "description": "专注复杂交互与可视化系统的工程交付：结构清晰、性能可控、组件可复用，并善用 AI 工具链提升研发效率。",
+      "mediaPlaceholder": "右侧媒体位（项目截图 / 3D 场景截帧 / Demo 视频占位）",
+      "ctas": [
+        { "label": "查看项目", "href": "/projects", "variant": "primary" },
+        { "label": "下载简历", "href": "/resume", "variant": "default" },
+        { "label": "联系我", "href": "/contact", "variant": "default" }
+      ]
+    },
+    "kpis": [
+      { "value": "4+ 年", "label": "前端工程经验" },
+      { "value": "可视化/三维", "label": "数字孪生项目交付" },
+      { "value": "AI 提效", "label": "工具链/智能功能探索" }
+    ],
+    "advantages": {
+      "title": "核心优势",
+      "description": "面试官最关心的三件事：你能不能做复杂事、怎么做、做出来效果如何。以下模块都是为\"快速判断\"设计。",
+      "items": [
+        {
+          "title": "可视化与三维交互",
+          "description": "Three.js / WebGL / 场景交互 / 动画 / 选中高亮 / 相机控制 / 资源加载优化。"
+        },
+        {
+          "title": "工程化与性能",
+          "description": "组件化沉淀、状态管理、请求与缓存、性能指标与优化策略（首屏、FPS、资源体积）。"
+        },
+        {
+          "title": "AI 应用与提效",
+          "description": "RAG/Agent/自动化脚手架/文档与代码生成流程；把\"会用\"变成\"能交付\"。"
+        }
+      ]
+    },
+    "featuredProjects": {
+      "title": "精选项目",
+      "description": "每个项目都按\"背景 → 职责 → 难点 → 方案 → 结果\"组织，便于你在面试中复述。",
+      "projectSlugs": ["smart-warehouse", "airport-system", "ai-toolchain"]
+    },
+    "techStack": {
+      "title": "技术栈与工具",
+      "description": "强调\"能落地\"的技术组合：前端主栈 + 可视化 + 工程化 + 最小后端 + AI 工具链。",
+      "categories": [
+        {
+          "title": "前端",
+          "tags": ["TypeScript", "React", "Vue 3", "Next.js", "Vite", "状态管理", "测试/规范"]
+        },
+        {
+          "title": "可视化 / 三维",
+          "tags": ["Three.js", "WebGL", "ECharts", "GSAP", "模型加载", "性能优化"]
+        },
+        {
+          "title": "后端 / 部署",
+          "tags": ["Node.js", "API", "Nginx", "Vercel", "CI/CD"]
+        },
+        {
+          "title": "AI 工具链",
+          "tags": ["Prompt", "RAG", "Agent", "自动化脚手架", "文档生成"]
+        }
+      ]
+    }
+  },
+  "about": {
+    "page": {
+      "title": "关于我",
+      "description": "用结构化叙事建立可信度：我做过什么、怎么做、做出来什么。"
+    },
+    "intro": {
+      "summary": "前端工程师，擅长可视化/三维交互系统的工程化交付，并探索 AI 应用与研发提效。",
+      "workStyle": [
+        "先定义目标指标与约束（性能/稳定/交互）",
+        "拆分模块与数据结构，组件化复用",
+        "用监控与指标迭代优化（首屏/FPS/体积）"
+      ]
+    },
+    "timeline": [
+      {
+        "period": "2021 - 至今",
+        "company": "公司 A",
+        "description": "数字孪生/可视化项目交付，负责 Three.js 场景与性能优化"
+      },
+      {
+        "period": "2019 - 2021",
+        "company": "公司 B",
+        "description": "业务系统/平台建设，组件库与工程化实践"
+      },
+      {
+        "period": "学习/探索",
+        "description": "AI 工具链、RAG/Agent、小型应用实践"
+      }
+    ],
+    "methodology": {
+      "title": "方法论（面试加分点）",
+      "description": "把经验沉淀成可复用的套路：需求拆解、数据建模、交互设计、性能策略、上线验证。",
+      "items": [
+        {
+          "title": "工程化",
+          "description": "规范、组件、目录结构、可维护性（占位）"
+        },
+        {
+          "title": "性能",
+          "description": "渲染与资源策略、监控、优化闭环（占位）"
+        },
+        {
+          "title": "AI 提效",
+          "description": "文档/代码生成、检索增强、自动化（占位）"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "page": {
+      "title": "联系",
+      "description": "留下你的需求/岗位信息，我会尽快回复。"
+    },
+    "info": {
+      "title": "联系方式",
+      "description": "邮箱、GitHub、社交链接放这里。也可以加\"可工作城市/到岗时间\"。",
+      "contacts": {
+        "email": "923206295@qq.com",
+        "github": "github.com/yourname",
+        "wechat": "yourwechat"
+      }
+    },
+    "form": {
+      "submitHint": "提交后我会收到邮件通知，并尽快回复你。"
+    }
+  },
+  "resume": {
+    "page": {
+      "title": "简历",
+      "description": "这里先用\"简历摘要 + 下载按钮\"。正式版可替换为 PDF 预览或在线简历模块。"
+    },
+    "summary": {
+      "title": "快速摘要",
+      "items": [
+        "主栈：TypeScript / React / Vue / Next.js",
+        "方向：可视化、Three.js、数字孪生",
+        "工程化：组件化、性能优化、规范化交付",
+        "AI：RAG/Agent/工具链实践（占位）"
+      ]
+    },
+    "download": {
+      "pdfUrl": "/api/resume/download",
+      "email": "923206295@qq.com"
+    },
+    "preview": {
+      "placeholder": "PDF 预览/截图占位"
+    }
+  }
+}
+

@@ -3,16 +3,13 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from './ui/Button';
+import { SiteInfo } from '@/lib/types/content';
 
-const NAV_ITEMS = [
-  { label: '首页', href: '/' },
-  { label: '项目', href: '/projects' },
-  { label: '关于我', href: '/about' },
-  { label: '简历', href: '/resume' },
-  { label: '联系', href: '/contact' },
-];
+interface HeaderProps {
+  siteInfo: SiteInfo;
+}
 
-export default function Header() {
+export default function Header({ siteInfo }: HeaderProps) {
   const pathname = usePathname();
 
   return (
@@ -20,13 +17,17 @@ export default function Header() {
       <div className="container-custom w-full flex items-center justify-between">
         {/* Brand */}
         <Link href="/" className="flex flex-col leading-[1.1] min-w-[160px] group">
-          <strong className="text-[16px] tracking-[0.2px] text-[var(--text)] group-hover:underline">Allen Lu</strong>
-          <span className="text-[12px] text-[var(--text-muted)]">前端 · 可视化 · AI 应用</span>
+          <strong className="text-[16px] tracking-[0.2px] text-[var(--text)] group-hover:underline">
+            {siteInfo.branding.name}
+          </strong>
+          <span className="text-[12px] text-[var(--text-muted)]">
+            {siteInfo.branding.subtitle}
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center justify-end gap-[20px] flex-wrap">
-          {NAV_ITEMS.map((item) => {
+          {siteInfo.navigation.map((item) => {
             // Check if the link is active
             // For homepage ('/'), exact match. For others, startsWith.
             const isActive = item.href === '/' 
@@ -35,7 +36,7 @@ export default function Header() {
 
             return (
               <Link
-                key={item.label}
+                key={item.href}
                 href={item.href}
                 className={`text-[14px] transition-colors hover:underline ${
                   isActive ? 'text-[var(--text)] font-semibold' : 'text-[var(--text-muted)]'
@@ -47,8 +48,8 @@ export default function Header() {
           })}
           
           <Button asChild variant="primary" className="ml-2">
-            <Link href="/contact">
-              约聊 / 合作
+            <Link href={siteInfo.ctaButton.href}>
+              {siteInfo.ctaButton.label}
             </Link>
           </Button>
         </nav>

@@ -12,6 +12,7 @@ import {
 } from '@/lib/api/response';
 import { saveContactSubmission } from '@/lib/api/data';
 import { checkRateLimit, getClientIP } from '@/lib/api/rateLimit';
+import { sendContactNotification } from '@/lib/api/email';
 
 export async function POST(request: NextRequest) {
   try {
@@ -47,11 +48,20 @@ export async function POST(request: NextRequest) {
 
     const { name, email, message } = validationResult.data;
 
-    // 保存提交（内存存储）
-    const submission = saveContactSubmission({ name, email, message });
+    // 保存提交（数据库或内存存储）
+    const submission = await saveContactSubmission({ name, email, message });
 
-    // 可选：发送邮件通知（生产环境）
-    // await sendEmailNotification({ name, email, message });
+    // 发送邮件通知
+    try {
+      const emailSent = await sendContactNotification({ name, email, message });
+      if (!emailSent) {
+        console.warn('邮件发送失败，但表单已保存');
+        // 即使邮件发送失败，也返回成功（表单已保存）
+      }
+    } catch (error) {
+      console.error('发送邮件时出错:', error);
+      // 邮件发送失败不影响表单提交成功
+    }
 
     // 返回成功响应
     return successResponse(
